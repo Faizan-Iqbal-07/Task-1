@@ -50,7 +50,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 100;
-    padding: clamp(1.6rem, 2vw, 2rem) clamp(3%, 7vw, 7%);
+    padding: 2rem 7%;
     display: flex;
     align-items: center;
     background: transparent;
@@ -63,7 +63,7 @@ body {
 }
 
 .header .logo {
-    font-size: clamp(2.2rem, 2.5vw, 2.5rem);
+    font-size: 2.5rem;
     color: var(--main-color);
     font-weight: 600;
     margin-right: auto;
@@ -71,7 +71,7 @@ body {
 }
 
 .navbar a {
-    font-size: clamp(1.6rem, 1.7vw, 1.7rem);
+    font-size: 1.7rem;
     font-weight: 500;
     margin-right: clamp(2rem, 4vw, 3.5rem);
     color: var(--text-color);
@@ -102,7 +102,7 @@ body {
 }
 
 #darkmode-icon {
-    font-size: clamp(2rem, 2.6vw, 2.6rem);
+    font-size: 2.4rem;
     color: var(--text-color);
     cursor: pointer;
 }
@@ -113,7 +113,7 @@ body {
 }
 
 #menu-icon {
-    font-size: clamp(3rem, 4vw, 3.6rem);
+    font-size: 3.6rem;
     color: var(--text-color);
     display: none;
 }
@@ -315,6 +315,12 @@ span {
 
 @media (max-width : 950px) {
 
+    .header{
+        padding: 2rem 3%;
+    }
+    #darkmode-icon {
+        font-size: 2.6rem;
+    }
     #menu-icon {
         display: block;
     }
@@ -338,6 +344,7 @@ span {
     .navbar a {
         display: block;
         margin: 2.4rem 0;
+        font-size: 16px;
     }
 
     .navbar a.active {
